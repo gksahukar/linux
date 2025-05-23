@@ -7,8 +7,5 @@ hostname=$(hostname)
 ip_address=$(hostname -I | awk '{print $1}')
 
 # Write to file
-echo "Hostname: $hostname" > hostinfo.txt
-echo "IP Address: $ip_address" >> hostinfo.txt
-
-# Print confirmation
-echo "Host information saved to hostinfo.txt"
+echo "Hostname: $hostname" 
+echo "IP Address: $ip_address"
